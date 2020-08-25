@@ -1,101 +1,106 @@
-.container{
-    height: auto;
-    width: 88%; 
-    background-image: url(./images/bg-top.svg), url(./images/bg-bottom.svg);
-    background-repeat: no-repeat;
-    background-size: contain, 500px;
-    background-position: right, left;
-    background-color : hsl(240, 78%, 98%);
-    text-align: center;
-    padding: 100px;
-    border-style: solid;
-    border-width: 3px;
-    display: inline-block;
-  }
-  
-  
-  .year{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 50px 0px;
-    font-family: "Times New Roman", Times, serif;
-    color: #4f403e ;
-    font-size: 30px;
-  }
-  
-  .span{
-    background-color: hsl(237, 63%, 64%);
-    border-radius: 50px;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 30px;
-    margin: 33px;
-  }
-  .anotherSpan1{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: white;
-    margin: 2px 2px;
-    margin-left: auto; 
-  }
-  
-  
-  .flex-block{
-    display: flex;
-    justify-content: center;
-    height: auto;  
-    width: auto;
-    flex-wrap: wrap;
-  }
-  
-  .myrow{
-    display: flex;
-    align-items: top;
-     flex-direction: row;
-     flex-wrap: wrap;
-  }
-  
-  .column_1{
-  height: 400px;
-  width:  300px;
-  border: 1px solid gray;
+.container {
+  min-height: 100vh;
+  border: 2px solid black;
+  background-image: url(./images/bg-top.svg), url(./images/bg-bottom.svg);
+  background-repeat: no-repeat;
+  background-size: contain, 500px;
+  background-position: right, left;
+  background-color: hsl(240, 78%, 98%);
+  text-align: center;
+  color: #4f403e;
+}
+
+.Annually_Monthly_block {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 200%;
+}
+
+.flex-Cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Card {
+  padding: 20px;
+  height: 450px;
+  width: 350px;
+  border: 2px solid gray;
   border-radius: 10px;
-  background-color:white; 
-  }
-  
-  .middle{
-  
-  width:  300px;
-  border: 1px solid gray;
-  border-radius: 10px;  
-  background-color: blue; 
-  }
-  
-  .column_2{
-  width:  300px;
-  border: 1px solid gray;
-  border-radius: 10px; 
-  background-color:white;   
-  height: 400px; 
-  }
-  
-  .blue{
-    background-color: blue;
-    padding: 15px;
-    border: 1px solid black;
-    margin: 35px;
-    border-radius: 50px;
-  }
-  
-  .white{
-    background-color  : whitesmoke;
-    padding: 20px;
-    border: 1px solid black;
-    margin: 40px;
-    border-radius: 50px;
-  }
+  background-color: white;
+  margin-right: 3px;
+}
+
+.button {
+  background-color: hsl(237, 63%, 64%);
+  padding: 15px;
+  border: 1px solid black;
+  margin: 35px;
+  border-radius: 50px;
+  width: auto;
+  height: auto;
+  color: white;
+}
+
+.Card:hover {
+  background-color: hsl(237, 63%, 64%);
+  height: 480px;
+  width: 400px;
+  color: white;
+}
+
+
+.Card:hover .button-transition {
+  background-color: white;
+  color: black;
+}
+
+
+.switch {
+  margin: 33px;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2196F3;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 6px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
