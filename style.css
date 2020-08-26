@@ -25,7 +25,6 @@
 }
 
 .Card {
-  padding: 20px;
   height: 450px;
   width: 350px;
   border: 2px solid gray;
@@ -47,7 +46,6 @@
 
 .Card:hover {
   background-color: hsl(237, 63%, 64%);
-  height: 480px;
   width: 400px;
   color: white;
 }
