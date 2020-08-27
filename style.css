@@ -1,33 +1,41 @@
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  color:#696969;
+}
+
+.pricingClass{
+  font-size: 2rem;
+}
+
 .container {
+  padding-top: 3%;
   min-height: 100vh;
-  border: 2px solid black;
   background-image: url(./images/bg-top.svg), url(./images/bg-bottom.svg);
   background-repeat: no-repeat;
   background-size: contain, 500px;
   background-position: right, left;
   background-color: hsl(240, 78%, 98%);
   text-align: center;
-  color: #4f403e;
 }
 
 .Annually_Monthly_block {
   display: flex;
   justify-content: center;
   margin: 50px 0px;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 200%;
+  color: #9698A6;
 }
 
 .flex-Cards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 6rem;
 }
 
 .Card {
   height: 450px;
   width: 350px;
-  border: 1px solid gray;
   border-radius: 15px;
   background-color: white;
   margin-right: 2px;
@@ -35,32 +43,37 @@
 }
 
 .button {
-  background-color: #4d5dfb;
-  background-image: linear-gradient(315deg, #4d5dfb 0%, #08c8f6 74%);
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   padding: 15px;
-  border: 1px solid black;
+  border: 1px solid white;
   margin: 35px;
-  border-radius: 50px;
-  width: auto;
+  border-radius: 10px;
+  width: 80%;
   height: auto;
   color: white;
 }
 
 .Card:hover {
   background-color: #20bf55;
-  background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   width: 400px;
   color: white;
+  transform: scaleY(1.1);
 }
 
 .Card:hover .button-transition {
-  background-color: #09c7fb;
-  background-image: linear-gradient(315deg, #09c7fb 0%, #93fb9d 74%);
-  color: black;
+  background-color: #d9d9d9;
+  background-image: linear-gradient(315deg, #d9d9d9 0%, #f6f2f2 74%);
+  color: blue;
+}
+
+
+.moneysize{
+  font-size: 4rem;
 }
 
 .switch {
-  margin-top: 40px;
+  margin-top: 15px;
   margin-left: 20px;
   margin-right: 20px;
   position: relative;
